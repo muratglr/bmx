@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hamburger Menü Butonu */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    color: #fff;
+    z-index: 1000;
+}
+
+/* Yan Menü (Sidebar) Stili */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Başlangıçta gizli */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s;
+    z-index: 999;
+}
+
+.sidebar.active {
+    left: 0; /* Active olduğunda görünür olacak */
+}
+
+.sidebar .navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.sidebar .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.sidebar .navbar a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+body {
+    font-family: 'Sawarabi Gothic', sans-serif;
+    background-color: #24484e;
+    transition: margin-left 0.3s;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Menü açıldığında container sağa kayar */
+.sidebar.active + .container {
+    margin-left: 500px; /* Menü açıldığında container sağa kayar */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #a7d0e067;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    margin: 100px auto;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #3d3c35;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Menü (Header) */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Başlık Stili */
+.baslik2 {
+    padding: 30px;
+}
+
+
+
+

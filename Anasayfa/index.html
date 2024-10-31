@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+    </style>
+</head>
+<body>
+
+    <!-- Hamburger Menü Butonu -->
+    <div class="hamburger" onclick="toggleSidebar()">
+        ☰
+    </div>
+
+    <!-- Yan Menü (Sidebar) -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="navbar">
+            <a href="/Anasayfa/index.html">Ana Sayfa</a>
+            <a href="/Hesaplayici/calculator.html">Hesaplayıcı</a>
+            <a href="/Iletisim/contact.html">İletişim</a>
+        </nav>
+    </aside>
+
+    <!-- Genel İçerik -->
+    <div class="container1">     
+        <h1>Genel Bilgiler</h1>
+        <p>
+            Bir kişinin ağırlığının kişinin boyunun karesine bölünmesiyle elde edilen bir ölçüm olan Vücut kütle indeksinde (VKİ) genel olarak indeksi 25 kg/m2 ila 30 kg/m2 ve üzeri olanlar obez olarak kabul edilirler. Bazı Doğu Asya ülkelerinde ise daha düşük değerler kullanılmaktadır.
+            
+        </p>
+    </div>
+
+    <div class="container">
+        <img src="/Anasayfa/pexels-beyzahzah-89810429-15319043.jpg" alt="Açıklama" class="responsive-image">
+    </div>
+    
+    <div class="container2">
+       
+        <h2 class="baslik2">Daha fazla bilgi için aşağıda yer alan siteleri ziyaret edebilirsiniz.</h2>
+        
+        <ul class="linkgenel">
+            <li class="link1"><a href="https://tr.wikipedia.org/wiki/V%C3%BCcut_kitle_indeksi">Wikipedia</a></li>
+
+            <li><a href="https://www.memorial.com.tr/saglik-rehberi/vucut-kitle-indeksi-hesaplama-vucut-kitle-indeksi-nasil-hesaplanir">Memorial</a></li>
+
+            <li><a href="https://www.acibadem.com.tr/ilgi-alani/vucut-kitle-indeksi-hesaplama/" >Acıbadem</a></li>
+        </ul>
+    </div>
+
+    <script>
+        // Yan menüyü açıp kapama işlevi
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
+

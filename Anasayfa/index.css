@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: soid;
+    
+}
+
+/* Hamburger Menü Butonu */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    color: #fff;
+    z-index: 1000;
+}
+
+/* Yan Menü (Sidebar) Stili */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Başlangıçta gizli */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s;
+    z-index: 999;
+}
+
+.sidebar.active {
+    left: 0; /* Active olduğunda görünür olacak */
+}
+
+.sidebar .navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.sidebar .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.sidebar .navbar a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+body {
+    font-family: 'Sawarabi Gothic', sans-serif;
+    background-color: #24484e;
+    transition: margin-left 0.3s;
+}
+
+.sidebar.active ~ .container1,
+.sidebar.active ~ .container,
+.sidebar.active ~ .container2 {
+    margin-left: 250px; /* Menü açıldığında içerik sağa kayar */
+}
+
+/* İçerik Konteyneri */
+.container1 {
+    text-align: center;
+    padding: 100px;
+    color: #fff;
+    margin: auto;
+    padding: auto;
+    width: auto;
+    height: auto;
+    
+    
+    
+}
+
+.container2 {
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+}
+
+/* Resim Stili */
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.responsive-image {
+    max-width: 40%;
+    max-height: 40%;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+/* Linkleri buton gibi göstermek için */
+.linkgenel {
+    display: flex; /* Butonların yatay hizalanmasını sağlar */
+    justify-content: center; /* Butonları ortalar */
+    gap: 20px; /* Butonlar arasındaki boşluk */
+    list-style: none; /* Liste noktalarını kaldırır */
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+.linkgenel a {
+    display: inline-block;
+    color: #555;
+    background-color: #a7d0e067;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.linkgenel a:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.linkgenel a:active {
+    background-color: #367c39;
+    transform: scale(0.95);
+}
+
+/* Başlık Stili */
+.baslik2 {
+    padding: 30px;
+}
+
+h1,p {
+    max-width: 80%;
+    margin: auto;
+    padding:  10px;
+    text-align: center;
+}
+
+.link1{
+    background-color:#fff;
+    border-radius: 10px;
+}
+
+
